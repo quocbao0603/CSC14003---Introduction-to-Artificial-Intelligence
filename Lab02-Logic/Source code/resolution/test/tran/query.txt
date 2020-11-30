@@ -1,0 +1,10 @@
+me(X, cungtuc).
+me(huyninh, hoquily).
+congai(cungtuc, tranminhtong).
+vochong(tranthuantong, lethanhngau).
+chu(trandutong, giandinhde).
+anhtrai(X, tranthuantong).
+bangoai(hientu, lethanhngau).
+ongngoai(X, hohanthuong).
+me(huyninh, hoquily)
+vochong(tranminhtong, X).

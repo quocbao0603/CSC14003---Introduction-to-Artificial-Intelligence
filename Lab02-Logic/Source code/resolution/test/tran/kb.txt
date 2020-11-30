@@ -1,0 +1,148 @@
+nam(tranminhtong).
+nam(hoquyly).
+nam(hohanthuong).
+nam(trannghetong).
+nam(tranthuantong).
+nam(giandinhde).
+nam(tranquangde).
+nam(tranthieude).
+nam(trandutong).
+nam(tranhientong).
+nam(tranduetong).
+nam(tranphede).
+nam(cungtuc).
+nam(duongnhatle).
+nam(tranngac).
+
+nu(hientu).
+nu(huyninh).
+nu(lethanhngau).
+nu(thuctu).
+nu(giatu).
+nu(vuongmau).
+
+vochong(tranminhtong, hientu).
+vochong(hoquyly, huyninh).
+vochong(tranthuantong, lethanhngau).
+vochong(tranduetong, giatu).
+vochong(cungtuc, vuongmau).
+
+cha(tranminhtong, huyninh).
+cha(tranminhtong, trannghetong).
+cha(tranminhtong, trandutong).
+cha(tranminhtong, tranhientong).
+cha(tranminhtong, tranduetong).
+cha(tranminhtong, cungtuc).
+cha(hoquyly, hohanthuong).
+cha(hoquyly, lethanhngau).
+cha(trannghetong, tranthuantong).
+cha(trannghetong, tranngac).
+cha(trannghetong, giandinhde).
+cha(tranduetong, tranphede).
+cha(cungtuc, duongnhatle).
+cha(tranngac, tranquangde).
+cha(tranthuantong, tranthieude).
+
+me(hientu, huyninh).
+me(hientu, trannghetong).
+me(hientu, trandutong).
+me(hientu, tranhientong).
+me(hientu, tranduetong).
+me(hientu, cungtuc).
+me(huyninh, hohanthuong).
+me(huyninh, lethanhngau).
+me(thuctu, tranthuantong).
+me(thuctu, tranngac).
+me(thuctu, giandinhde).
+me(giatu, tranphede).
+me(vuongmau, duongnhatle).
+me(lethanhngau, tranthieude).
+
+anhtrai(tranhientong, trannghetong).
+anhtrai(tranhientong, trandutong).
+anhtrai(tranhientong, trannghetong).
+anhtrai(tranhientong, cungtuc).
+anhtrai(tranhientong, huyninh).
+anhtrai(trannghetong, trandutong).
+anhtrai(trannghetong, tranduetong).
+anhtrai(trannghetong, cungtuc).
+anhtrai(trannghetong, huyninh).
+anhtrai(cungtuc, trandutong).
+anhtrai(cungtuc, tranduetong).
+anhtrai(cungtuc, huyninh).
+anhtrai(trandutong, tranduetong).
+anhtrai(trandutong, huyninh).
+anhtrai(tranduetong, huyninh).
+
+anhtrai(tranngac, tranthuantong).
+anhtrai(tranngac, giandinhde).
+anhtrai(giandinhde, tranthuantong).
+
+vua(tranminhtong).
+vua(trannghetong).
+vua(hoquyly).
+vua(trandutong).
+vua(tranhientong).
+vua(tranduetong).
+vua(hohanthuong).
+vua(tranthuantong).
+vua(tranphede).
+vua(duongnhatle).
+vua(tranthieude).
+vua(tranquangde).
+
+
+phuhuynh(Phuhuynh, Con):- cha(Phuhuynh, Con); me(Phuhuynh, Con).
+
+con(Con, Nguoi):- cha(Nguoi, Con); me(Nguoi, Con).
+
+contrai(Con, Nguoi):- cha(Nguoi, Con).
+
+congai(Con, Nguoi):- me(Nguoi, Con).
+
+
+ongba(OngBa, Chau):-
+    phuhuynh(Ph, Chau),
+    phuhuynh(OngBa, Ph).
+
+ongbangoai(OngBa, Chau):-
+    me(Me, Chau),
+    phuhuynh(OngBa, Me).
+
+ongbanoi(OngBa, Chau):-
+    cha(Cha, Chau),
+    phuhuynh(OngBa, Cha).
+
+ongnoi(Ong, Chau):-
+    cha(Cha, Chau),
+    cha(Ong, Cha).
+
+banoi(Ba, Chau):-
+    cha(Cha, Chau),
+    me(Ba, Cha).
+
+ongngoai(Ong, Chau):-
+    me(Me, Chau),
+    cha(Ong, Me).
+
+bangoai(Ba, Chau):-
+    me(Me, Chau),
+    me(Ba, Me).
+
+chau(Chau, OngBa):-
+    ongba(OngBa, Chau).
+
+chaunoi(Chau, OngBa):-
+    ongbanoi(OngBa, Chau).
+
+chaungoai(Chau, OngBa):-
+    ongbangoai(OngBa, Chau).
+
+chu(Chu, Chau):-
+    cha(Cha, Chau),
+    anhtrai(Cha, Chu).
+
+bac(Bac, Chau):-
+    cha(Cha, Chau),
+    anhtrai(Bac, Cha).
+

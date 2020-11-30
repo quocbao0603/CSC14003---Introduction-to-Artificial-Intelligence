@@ -1,0 +1,33 @@
+me(X, cungtuc).
+X = hientu
+.
+
+me(huyninh, hoquily).
+False.
+
+congai(cungtuc, tranminhtong).
+False.
+
+vochong(tranthuantong, lethanhngau).
+True.
+
+chu(trandutong, giandinhde).
+True.
+
+anhtrai(X, tranthuantong).
+X = tranngac
+.
+
+bangoai(hientu, lethanhngau).
+True.
+
+ongngoai(X, hohanthuong).
+X = tranminhtong
+.
+
+me(huyninh, hoquily)
+False.
+
+vochong(tranminhtong, X).
+X = hientu
+.
