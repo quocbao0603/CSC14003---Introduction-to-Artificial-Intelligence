@@ -1,5 +1,3 @@
-#references:
-#https://github.com/zeralight/backward-chaining/blob/master/backchain.py
 #How to use:
 #python3 backward_chaining.py hoanggia.kb "((husband ?x queenelizabethii))" 
 #Output: ((husband pricephillip queenelizabethii))
