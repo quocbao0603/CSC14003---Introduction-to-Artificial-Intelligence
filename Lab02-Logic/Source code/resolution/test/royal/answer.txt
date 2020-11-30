@@ -1,0 +1,31 @@
+husband(X, queenelizabethii).
+X = princessanne
+.
+
+child(X, princeandrew).
+X = princessanne
+.
+
+grandparent(X, miagracetindall).
+X = zaraphillips
+.
+
+married(X, autumnkelly).
+X = peterphillips
+.
+
+divorced(princecharles, X).
+X = princessdiana
+.
+
+parent(X, princeedward).
+X = queenelizabethii
+.
+
+divorced(X, princessdiana).
+X = princecharles
+.
+
+parent(X, islaphillips).
+X = peterphillips
+.

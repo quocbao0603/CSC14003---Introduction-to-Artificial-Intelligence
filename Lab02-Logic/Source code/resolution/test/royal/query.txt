@@ -1,0 +1,8 @@
+husband(X, queenelizabethii).
+child(X, princeandrew).
+grandparent(X, miagracetindall).
+married(X, autumnkelly).
+divorced(princecharles, X).
+parent(X, princeedward).
+divorced(X, princessdiana).
+parent(X, islaphillips).

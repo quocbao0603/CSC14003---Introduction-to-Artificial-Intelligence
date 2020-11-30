@@ -1,0 +1,25 @@
+?- husband(X, queenelizabethii).
+X = princephillip.
+
+?- child(X, princeandrew).
+X = princessbeatrice ;
+X = princesseugenie.
+
+?- grandparent(X, miagracetindall).
+X = captainmarkphillips .
+
+?- married(X, autumnkelly).
+X = peterphillips.
+
+?- divorced(princecharles, X).
+X = princessdiana.
+
+?- parent(X, princeedward).
+X = princephillip ;
+X = queenelizabethii.
+
+?- divorced(X, princessdiana).
+X = princecharles.
+
+?- parent(X, islaphillips).
+X = peterphillips .
